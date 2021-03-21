@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>reten.ga</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.1/css/bulma.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  </head>
+  <body>
+  	<script>
+  		document.addEventListener('DOMContentLoaded', () => {
+
+  // Get all "navbar-burger" elements
+  const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+  // Check if there are any navbar burgers
+  if ($navbarBurgers.length > 0) {
+
+    // Add a click event on each of them
+    $navbarBurgers.forEach( el => {
+      el.addEventListener('click', () => {
+
+        // Get the target from the "data-target" attribute
+        const target = el.dataset.target;
+        const $target = document.getElementById(target);
+
+        // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+        el.classList.toggle('is-active');
+        $target.classList.toggle('is-active');
+
+      });
+    });
+  }
+
+});
+</script>
+<section class="hero is-fullheight has-background-black">
+  <!-- Hero head: will stick at the top -->
+  <div class="hero-head">
+    <header class="navbar">
+      <div class="container">
+        <div class="navbar-brand">
+          <a class="navbar-item">
+            <!-- <img src="https://bulma.io/images/bulma-type-white.png" alt="Logo"> -->
+          </a>
+          <span class="navbar-burger" data-target="navbarMenuHeroC">
+            <span></span>
+            <span></span>
+            <span></span>
+          </span>
+        </div>
+        <div id="navbarMenuHeroC" class="navbar-menu has-text-centered has-text-danger has-background-black">
+          <div class="navbar-end">
+            <a class="navbar-item is-active has-background-dark has-text-danger">
+              Inicio
+            </a>
+            <a class="navbar-item">
+              Servicios
+            </a>
+            <a class="navbar-item">
+              Contacto
+            </a>
+         <!--  <span class="navbar-item"> -->
+            <!-- <a class="button is-danger"> -->
+            <!--   <span class="icon"> -->
+                 <!-- <i class="fab fa-user"></i> -->
+            <!--   </span> -->
+             <!--  <span>Acceso</span> -->
+              </a>
+            </span>
+          </div>
+        </div>
+      </div>
+    </header>
+  </div>
+
+  <!-- Hero content: will be in the middle -->
+  <div class="hero-body">
+    <div class="container has-text-centered is-family-code">
+      <h1 class="title has-text-danger">
+        laBatcueva
+      </h1>
+      <h2 class="subtitle">
+        Soluciones Tecnológicas
+      </h2>
+    </div>
+  </div>
+
+</section>
+  </body>
+</html>
